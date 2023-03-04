@@ -22,7 +22,7 @@ for label in cols[:-1]:
 
 #Train, validation, test datasets
 
-train, valid, test = np.split(df.sample(frac=1), [int(0.95*len(df)), int(0.97*len(df))])
+train, valid, test = np.split(df.sample(frac=1), [int(0.95*len(df)), int(0.98*len(df))])
 
 def scale_dataset(dataframe, oversample=False):
   X = dataframe[dataframe.columns[:-1]].values
